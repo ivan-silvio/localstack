@@ -164,8 +164,7 @@ def moto_put_log_events(_, self, log_group_name, log_stream_name, log_events, se
             )
 
 
-def moto_put_subscription_filter(put_subscription_filter, *args, **kwargs):
-    self = put_subscription_filter.__self__
+def moto_put_subscription_filter(self, put_subscription_filter, *args, **kwargs):
 
     log_group_name = args[0]
     filter_name = args[1]
